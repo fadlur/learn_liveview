@@ -4,7 +4,7 @@ import Config
 config :learn_liveview, LearnLiveview.Repo,
   username: "postgres",
   password: "147789",
-  hostname: "127.0.01",
+  hostname: "127.0.0.1",
   database: "learn_liveview_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,

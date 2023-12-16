@@ -1,5 +1,6 @@
 defmodule LearnLiveviewWeb.Router do
   use LearnLiveviewWeb, :router
+  import Phoenix.LiveView.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -18,6 +19,7 @@ defmodule LearnLiveviewWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/thermostat/:house", ThermostatLive
   end
 
   # Other scopes may use custom stacks.
